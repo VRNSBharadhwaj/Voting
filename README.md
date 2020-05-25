@@ -9,3 +9,4 @@ To check the post,get,delete requests you can install postman(optional) and chec
 All the assets folders are for the front-end(css part).
 Models folder contains info regarding various schemas.
 All the ejs files are for the back-end.
+All the above folders should be within a single folder while testing.
