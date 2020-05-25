@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets_8/viewapplicants.css" />
+</head>
+
+<body>
+    <h1 class='one'>VIEW APPLICANTS</h1>
+    <hr class='dotted' />
+    <p><a class="home" href="Home1">Home</a></p>
+    <div class='two'>
+        <ul>
+            <li><a class='ab' href="managePositions">Manage Positions</a></li>
+            <li><a class='ab' href="manageCandidates">Manage Candidates</a></li>
+            <li><a class='ab' href="setTime">Set Election Timings</a></li>
+            <li><a class='ab' href="viewApplicants">View Applicants</a></li>
+            <li><a class='ab' href="notifyVoters">Notify Voters</a></li>
+        </ul>
+    </div>
+    <div class='three'>
+        <hr class='dotted2' />
+        <p style="text-align: center;color: red;"> LIST OF APPLICANTS</p>
+        <table class="eight">
+            <tr style="transform: translateY(40px);">
+                <th style="font-size: 20px;transform: translateX(40 px);">Id</th>
+                <th style="font-size: 20px;transform: translateX(110 px);">Applicant Name</th>
+                <th style="font-size: 20px;">Position</th>
+                <th style="font-size: 20px;">Reject</th>
+            </tr>
+            <% if(record.length > 0) %>
+            <% record.forEach(function(data,index){ %>
+                <% if(data.isapplicant) {%>
+                   <tr>
+                        <td style="font-size: 20px;"><%= index+1 %></td>
+                        <td style="font-size: 20px;"><%= data.name %></td>
+                        <td style="font-size: 20px;"><%= data.position%></td>
+                        <td><a class='del' href='disapprove/<%= data.name%>&<%= data.position%>'>Reject</a></td>
+                   </tr>
+                <% } else { %> 
+                    <% index-- %>
+                 <% } %>   
+            <% }) %>
+        </table>
+    </div>
+</body>
+
+</html>

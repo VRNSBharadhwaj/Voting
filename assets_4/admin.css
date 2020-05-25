@@ -1,0 +1,28 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.one{
+    text-align: center;
+}
+
+.two{
+    text-align: center;
+    margin-left: 320px;
+    margin-top: -16px;
+}
+
+.three{
+  width: 636px;
+  height: 250px;
+  border: 2px #98bf21 solid;
+  margin-left: 320px;
+  margin-top: 5px;
+  padding-top: 100px;
+  text-align: center;
+  font-size: 20px;
+}
+

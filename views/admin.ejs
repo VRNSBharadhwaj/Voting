@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="assets_2/admin.css" />
+
+</head>
+
+<body>
+
+    <!-- <%- include ('partials/nav') %>  -->
+    <header>
+        <%- include ('partials/nav') %>
+        <h2 class='one'>Online Voting Platform</h1>
+            <p class='two'>Admin:</p>
+            <form class='three' method="POST" action="/admin">
+                <label class='four' for="text">Enter Key</label><br>
+                <input class='five' type="password" name="key" /><br>
+                <input class='six' type="submit" value="LOGIN" />
+            </form>
+    </header>
+</body>
+</html>

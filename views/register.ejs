@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="assets_1/register_1.css" />
+</head>
+<body>
+     <!-- <%- include ('partials/nav') %>  -->
+    <header>
+        <%- include ('partials/nav') %>
+            <p class='one'>Register</p>
+            <form class='two' method="POST" action="/register">
+                <label class='three' for="name">Name</label><br>
+                <input class='four' type="text" name="name"><br>
+                <label class='five' for="email">Email-Id</label><br>
+                <input class='six' type="email" name="email" placeholder='@iitkgp.ac.in'><br>
+                <label class='seven' for="dept">Department</label><br>
+                <select class="eight" name="dept">
+                    <option value="Computer Science">Computer Science</option>
+                </select> <br>
+                <label class='nine' for="hall">Hall</label><br>
+                <select class="ten" name="hall">
+                    <option value="Azad">Azad</option>
+                    <option value="BCR">BCR</option>
+                    <option value="BRH">BRH</option>
+                    <option value="Gokhale">Gokhale</option>
+                    <option value="HJB">HJB</option>
+                    <option value="JCB">JCB</option>
+                    <option value="LBS">LBS</option>
+                    <option value="MMM">MMM</option>
+                    <option value="MS">MS</option>
+                    <option value="MT">MT</option>
+                    <option value="Patel">Patel</option>
+                    <option value="RK">RK</option>
+                    <option value="RLB">RLB</option>
+                    <option value="SAM">SAM</option>
+                    <option value="SN/IG">SN/IG</option>
+                    <option value="VS">VS</option>
+                    <option value="ZKH">ZKH</option>
+                    <option value="Nehru">Nehru</option>
+                    <option value="SNVH">SNVH</option>
+                    <option value="RP">RP</option>
+                    <option value="LLR">LLR</option>
+                </select><br>
+                <label class='eleven' for="password">Password</label><br>
+                <input class='twelve' type="text" name="password"><br>
+                <label class='forteen' for="password">Confirm Password</label><br>
+                <input class='fifteen' type="text" name="password1"><br>
+                <input class='thirteen' type="submit" value="REGISTER"/><br>
+            </form>
+            </header>
+</body>
+</html>

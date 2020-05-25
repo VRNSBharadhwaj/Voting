@@ -1,0 +1,122 @@
+body{
+    background-image:url("time-lapse-photo-of-stars-on-night-924824.jpg");
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.one{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+.two{
+    
+    text-align: center;
+}
+
+.three{
+    color: white;
+    text-align: center;
+    font-size: 1.7em;
+    margin-left: -200px;
+}
+
+.four{
+    margin-left: -57px;
+    /* text-align: center; */
+    height: 18px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.five{
+    color: white;
+    text-align: center;
+    font-size: 1.7em;
+    margin-left: -170px;
+}
+
+.six{
+    margin-left: -57px;
+    /* text-align: center; */
+    height: 18px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.seven{
+    color: white;
+    text-align: center;
+    font-size: 1.7em;
+    margin-left: -130px;
+}
+
+.eight{
+    color:black;
+    text-align: center;
+    margin-left: -55px;
+    width: 200px;
+    height: 18px;
+    font-size: 0.9em;
+    border-radius: 5px;
+}
+
+.nine{
+    color: white;
+    text-align: center;
+    font-size: 1.7em;
+    margin-left: -210px;
+}
+
+.ten{
+    color: black;
+    text-align: center;
+    margin-left: -55px;
+    height: 18px;
+    width: 200px;
+    font-size: 0.9em;
+    border-radius: 5px;
+}
+
+.eleven{
+    color: white;
+    text-align: center;
+    font-size: 1.7em;
+    margin-left: -150px;
+}
+
+.twelve{
+    margin-left: -50px;
+    /* text-align: center; */
+    height: 18px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.thirteen{
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 80px;
+    border-radius: 5px;
+}
+
+.forteen{
+    color: white;
+    font-size: 1.5em;
+    margin-left: -65px;
+    
+}
+
+.fifteen{
+    width: 200px;
+    margin-left: -45px;
+    height: 18px;
+    border-radius: 5px;
+}

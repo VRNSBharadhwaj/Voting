@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets_7/setTime.css" />
+</head>
+
+<body>
+    <h1 class='one'>SET ELECTION TIMINGS</h1>
+    <hr class='dotted' />
+    <p><a class="home" href="Home1">Home</a></p>
+    <div class='two'>
+        <ul>
+            <li><a class='ab' href="managePositions">Manage Positions</a></li>
+            <li><a class='ab' href="manageCandidates">Manage Candidates</a></li>
+            <li><a class='ab' href="setTime">Set Election Timings</a></li>
+            <li><a class='ab' href="viewApplicants">View Applicants</a></li>
+            <li><a class='ab' href="notifyVoters">Notify Voters</a></li>
+        </ul>
+    </div>
+    <div class='three'>
+        <p style="color: red;transform: translateY(-20px);">SET TIME</p>
+        <form class='four' method="POST" action="/setTime">
+            <label class='five' for="applopentime">Applications Open</label>
+            <input class='six' type="datetime-local" name="ropentime" /><br>
+            <label class='eight' for="applclosetime">Applications Close</label>
+            <input class='nine' type="datetime-local" name="rclosetime" /><br>
+            <label class='ten' for="votestarttime">Voting Start</label>
+            <input class='eleven' type="datetime-local" name="votestarttime" /><br>
+            <label class='twelve' for="voteclosetime">Voting End</label>
+            <input class='thirteen' type="datetime-local" name="voteclosetime" /><br>
+            <input class='seven' type="submit" value="UPDATE" />
+        </form>
+        <table>
+            <tr>
+                <th style="font-size: 20px;">Applications Open</th>
+                <th style="font-size: 20px;">Applications Close</th>
+                <th style="font-size: 20px;">Voting Start</th>
+                <th style="font-size: 20px;">Voting End</th>
+            </tr>
+            <% if(record.length > 0) %>
+            <% record.forEach(function(data,index){ %>
+            <tr>
+                <td style="font-size: 20px;"><%= data.name1%></td>
+                <td style="font-size: 20px;"><%= data.name2%></td>
+                <td style="font-size: 20px;"><%= data.name3%></td>
+                <td style="font-size: 20px;"><%= data.name4%></td>
+            </tr>
+            <% }) %>
+        </table>
+    </div>
+   
+</body>
+
+</html>

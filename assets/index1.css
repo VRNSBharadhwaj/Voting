@@ -1,0 +1,91 @@
+body{
+    background-image:url('./background.jpg');
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+.one{
+    text-align: center;
+    margin-top:100px;
+    font-size: 5em;  
+    color: blue;
+}
+
+
+.admin{
+    font-size: 25px;
+    position: absolute;
+    transform: translate(1200px,-320px);
+    color: white;
+    /* text-decoration: underline; */
+}
+
+.three{
+    text-align: center;
+    font-size:30px;
+    margin-left:-310px;
+}
+
+.four{
+    text-align: center;
+}
+
+.five{
+    text-align: center;
+    font-size:30px;
+    margin-left: -265px;
+    font-size: 35px;
+}
+
+.six{
+    width: 280px;
+    margin-left: -105px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.seven{
+    text-align: center;
+    font-size:30px;
+    margin-left: -255px;
+    font-size: 35px;
+}
+
+.eight{
+    width: 280px;
+    margin-left: -105px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.nine{
+    text-align: center;
+    margin-left: 160px;
+    margin-top:10px;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+}
+
+.ten{
+    font-size: 20px;
+    color: white;
+    margin-left: -105px;
+    /* text-decoration: underline; */
+    margin-top: -115px;
+}
+
+.eleven{
+    color: white;
+    font-size: 20px;
+    margin-left: 435px;
+}
+
+a:hover{
+    text-decoration: underline;
+}

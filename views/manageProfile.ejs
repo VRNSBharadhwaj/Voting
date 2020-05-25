@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        .dotted {
+            border: 1px dotted #ff0000;
+            border-style: none none dotted;
+            color: #fff;
+            background-color: #fff;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        a:link,
+        a:visited {
+            display: block;
+            font-weight: bold;
+            color: #FFFFFF;
+            background-color: #98bf21;
+            width: 120px;
+            text-align: center;
+            padding: 4px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:active {
+            background-color: #7A991A;
+        }
+
+        li {
+            float: left;
+        }
+
+        .home {
+            padding-left: 1px;
+            padding-right: 1px;
+            text-transform: capitalize;
+        }
+
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        .one {
+            text-align: center;
+        }
+
+        .two {
+            text-align: center;
+            margin-left: 320px;
+            margin-top: -16px;
+        }
+
+        .three {
+            width: 636px;
+            height: 250px;
+            border: 2px #98bf21 solid;
+            margin-left: 320px;
+            margin-top: 5px;
+            padding-top: 100px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .nine{
+            margin-left: 30px;
+        }
+        .ten{
+            width: 180px;
+            margin-left: 30px;
+        }
+        .five{
+            margin-left: 45px;
+        }
+        .twelve{
+            margin-left: 20px;
+        }
+        .seven{
+            margin-left: 290px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class='main'></div> -->
+    <h2 class='one'>MANAGE PROFILE</h2>
+    <hr class='dotted' />
+    <p class="home" style="margin-left: 575px;"><a href="/Home2/<%= record.email%>">Home</a></p>
+    <div class='two'>
+        <ul>
+            <li><a href="/currentPolls/<%= record.email%>">Current Polls</a></li>
+            <li><a href="/manageProfile/<%= record.email%>">Manage Profile</a></li>
+            <li><a href="/viewResults/<%= record.email%>">Election Results</a></li>
+            <li><a href="/electionAnalysis/<%= record.email%>">Election Analysis</a></li>
+            <li><a href="/apply/<%= record.email%>">Apply Nomination</a></li>
+        </ul>
+    </div>
+    <div class='three'>
+        <form method="POST" action="/manageProfile/<%= record.email%>">
+        <label class='four' for="name">Update Name</label>
+        <input class="five" type="text" name="name" /><br>
+        <label class='six' for="roll">Update Department</label>
+        <input class="eight" type="text" name="dept" /><br>
+        <label class='nine' for="hall">Update Hall</label>
+        <select class="ten" name="hall">
+            <option value="Azad">Azad</option>
+            <option value="BCR">BCR</option>
+            <option value="BRH">BRH</option>
+            <option value="Gokhale">Gokhale</option>
+            <option value="HJB">HJB</option>
+            <option value="JCB">JCB</option>
+            <option value="LBS">LBS</option>
+            <option value="MMM">MMM</option>
+            <option value="MS">MS</option>
+            <option value="MT">MT</option>
+            <option value="Patel">Patel</option>
+            <option value="RK">RK</option>
+            <option value="RLB">RLB</option>
+            <option value="SAM">SAM</option>
+            <option value="SN/IG">SN/IG</option>
+            <option value="VS">VS</option>
+            <option value="ZKH">ZKH</option>
+            <option value="Nehru">Nehru</option>
+            <option value="SNVH">SNVH</option>
+            <option value="RP">RP</option>
+            <option value="LLR">LLR</option>
+        </select><br>
+        <label class='eleven' for="roll">Update Password</label>
+        <input class="twelve" type="password" name="password" /><br>
+        <input class='seven' type="submit" value="Update" />
+        </form>
+    </div>
+</body>
+
+</html>

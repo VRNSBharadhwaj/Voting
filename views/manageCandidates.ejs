@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets_6/manageCandidates.css"/>
+</head>
+
+<body>
+    <h1 class='one'>MANAGE CANDIDATES</h1>
+    <hr class='dotted' />
+    <p><a class="home" href="Home1">Home</a></p>
+    <div class='two'>
+        <ul>
+            <li><a class='ab' href="managePositions">Manage Positions</a></li>
+            <li><a class='ab' href="manageCandidates">Manage Candidates</a></li>
+            <li><a class='ab' href="setTime">Set Election Timings</a></li>
+            <li><a class='ab' href="viewApplicants">View Applicants</a></li>
+            <li><a class='ab' href="notifyVoters">Notify Voters</a></li>
+        </ul>
+    </div>
+    <div class='three'>
+        <p style="color: red;transform: translateY(-20px);">ADD NEW CANDIDATE</p>
+        <form class='four' method="POST" action="/manageCandidates">
+            <label class='five' for="name">Candidate Name</label>
+            <input class='six' type="text" name="name" /><br>
+            <label class='nine' for="position">Position</label>
+            <select class="ten" name="position">
+                <% if(record.length > 0) %>
+                <% record.forEach(function(data,index){ %>
+                <option value="<%=data.name%>"><%=data.name%></option>
+                <% }) %>
+            </select><br>
+            <input class='seven' type="submit" value="Add" />
+        </form>
+        <hr class='dotted2' />
+        <p style="text-align: center;color: red;transform: translateY(-40px);">AVAILABLE CANDIDATES</p>
+        <table class="eight">
+            <tr>
+                <th style="font-size: 20px;transform: translateX(40 px);">Id</th>
+                <th style="font-size: 20px;transform: translateX(110 px);">Candidate Name</th>
+                <th style="font-size: 20px;">Position</th>
+                <th style="font-size: 20px;">Dismiss</th>
+            </tr>
+            <% if((record.length > 0)&&(candidates.length > 0)) %>
+            <% candidates.forEach(function(data,index){ %>
+            <tr>
+                <td style="font-size: 20px;"><%= index+1 %></td>
+                <td style="font-size: 20px;"><%= data.name %></td>
+                <td style="font-size: 20px;"><%= data.position%></td>
+                <td><a class='del' href='dismiss/<%= data.name%>&<%= data.position%>'>Dismiss</a></td>
+            </tr>
+            <% }) %> 
+        </table>  
+    </div>
+</body>
+
+</html>

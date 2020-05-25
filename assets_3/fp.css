@@ -1,0 +1,48 @@
+body{
+    background-image:url('./time-lapse-photo-of-stars-on-night-924824.jpg');
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+.one{
+    text-align: center;
+    margin-top:100px;
+    font-size: 5em;
+    color: skyblue;
+}
+
+
+.three{
+    text-align: center;
+    font-size:30px;
+    margin-left:-310px;
+}
+
+.four{
+    text-align: center;
+    font-size:30px;
+    margin-left: 30px;
+    font-size: 35px;
+    color: white;
+}
+
+.five{
+     width: 280px;
+    margin-left: 190px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.six{
+    text-align: center;
+    margin-left: 400px;
+    margin-top:10px;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+}
