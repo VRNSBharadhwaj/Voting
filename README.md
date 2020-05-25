@@ -11,3 +11,4 @@ All the assets folders are for the front-end(css part).
 Models folder contains info regarding various schemas.
 All the ejs files are for the back-end.
 All the above folders should be within a single folder while testing.
+the functionality "Election Analysis" and "Upload manifesto" is not done yet and it will be done soon.
